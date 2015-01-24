@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2015 KE Art and Design.
+All Rights Reserved.
+-->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <title>CPS Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            /*           css reset*/
+            * {margin: 0;padding: 0;outline: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+            *:after, *:before { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+            article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {  display: block;}
+            html {font-size: 100%;height: auto !important;height: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+            .clear {display: block;	}
+            .clear::after {clear: both;content: ".";display: block;height: 1px;visibility: hidden;}
+
+
+            body{
+                background-image: url("images/rebel.png");
+                margin:0;
+            }
+
+            #grad{
+                background: -webkit-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* Standard syntax */
+                width: 100%;
+                height: 100%;
+            }
+
+            .logo{
+                max-width: 100%; 
+            }
+            .content{
+                position:relative; 
+                overflow:hidden;
+                width: 100%;
+                top:-30px;
+            }
+
+            .main{
+                position: relative;
+                margin: auto;
+                padding-top: 10%;
+                width: 70%;
+                max-width: 875px;
+            }
+
+            .grid{
+
+                height: 100%;
+                width: 100%;
+            }
+
+            .menu{
+                align-self:flex-end;
+            }
+            .rows{
+                list-style:none; 
+                float:left; /* Clear floats */
+                width:100%;
+                z-index: 1000;
+
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+
+                flex-direction: row;
+                justify-content: space-between;
+
+                background:#000; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+                background:rgba(0,0,0,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+
+            }
+
+            .rows > li{
+position: relative;
+                flex-grow: 1;
+                align-self: flex-end;
+                list-style: none;
+                flex-shrink:1;
+                flex-basis: 0;
+                float:none;
+
+            }
+
+            .rows > li > a{
+                position: relative;
+                margin:0; 
+                display: block;
+
+                /* styling: */
+                text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 15px;
+                text-align: center;
+                color: #adc9fa;
+                padding: 5px 0;
+                background: rgba(100,100,100,.75);
+            }
+
+            .rows > li > a + ul{
+                display: none;
+            }
+            .rows > li > a:hover{
+                background: rgba(100,100,100,1);
+            }
+
+
+            .rows > li > ul {
+                position: absolute;
+                margin:0; 
+                display: none;
+                list-style: none;
+                                justify-content: flex-start;
+                flex-direction:column;
+                width: 100%;
+
+               
+            }
+            .rows > li:hover > ul {
+                display: flex;
+            }
+            
+            .rows > li > ul > li{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: auto;
+            }
+
+            .rows > li > ul > li > a{
+                 text-decoration: none;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 15px;
+                text-align: center;
+                color: #fff;
+                padding: 5px 0;
+                background: rgba(100,100,100,.2);
+                display: block;
+             
+                
+            }
+            .squares{
+                background: rgba(100,100,100,.75);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="grad">
+            <div class="main">
+
+                <div class="grid">
+                    <div class="navigation">
+                        <ul class="rows">
+                            <li class="menu"><a href="index.html" style="background:none; padding: 0px;"><img class="logo" src="images/CPSlogo.png" /></a></li>
+                            <li class="menu"><a href="#" onclick="toggle_visibility('about');">about</a></li>
+                            <li  class="menu"><a href="#">upgrades</a></li>
+                            <li  class="menu"><a href="#">parts</a></li>
+                            <li  class="menu"><a href="#">services</a>
+                                <ul>
+                                    <li><a href="#">engineering</a></li>
+                                    <li><a href="#">field services</a></li>
+                                    <li><a href="#">training</a></li>
+                                </ul>
+                            </li>
+                            <li  class="menu"><a href="#">contact</a>
+                                <ul>
+                                    <li><a href="#">california</a></li>
+                                    <li><a href="#">arizona</a></li>
+                                    <li><a href="#">europe</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<ul class="rows">
+                        <li class="squares"><img src="images/square.png" /></li>
+                        <li class="squares"><img src="images/square.png" /></li>
+                        <li class="squares"><img src="images/square.png" /></li>
+                        <li class="squares"><img src="images/square.png" /></li>
+                        <li class="squares"><img src="images/square.png" /></li>
+                        <li class="squares"><img src="images/square.png" /></li>
+                    </ul>-->
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
