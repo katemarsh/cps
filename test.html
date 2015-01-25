@@ -39,35 +39,37 @@ All Rights Reserved.
             .logo{
                 max-width: 100%; 
             }
-            .content{
-                position:relative; 
-                overflow:hidden;
-                width: 100%;
-                top:-30px;
-            }
 
-            .main{
+
+
+
+            .grid{
+
+                height:70vh;
+                width:70vh;
+                display: flex;
+                flex-direction: column;
                 position: relative;
                 margin: auto;
                 padding-top: 10%;
                 width: 70%;
-                max-width: 875px;
-            }
 
-            .grid{
-
-                height: 100%;
-                width: 100%;
             }
 
             .menu{
                 align-self:flex-end;
+                z-index: 100;
+                background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* Standard syntax */
+
             }
             .rows{
                 list-style:none; 
                 float:left; /* Clear floats */
                 width:100%;
-                z-index: 1000;
+position: relative;
 
                 display: -webkit-box;
                 display: -moz-box;
@@ -75,16 +77,15 @@ All Rights Reserved.
                 display: -webkit-flex;
                 display: flex;
 
+                flex-grow:1;
+                flex-basis:0;
                 flex-direction: row;
                 justify-content: space-between;
-
-                background:#000; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
-                background:rgba(0,0,0,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
 
             }
 
             .rows > li{
-position: relative;
+                position: relative;
                 flex-grow: 1;
                 align-self: flex-end;
                 list-style: none;
@@ -106,15 +107,20 @@ position: relative;
                 font-size: 15px;
                 text-align: center;
                 color: #adc9fa;
-                padding: 5px 0;
-                background: rgba(100,100,100,.75);
+                padding: 15px 0;
+                text-transform: uppercase;
+                letter-spacing: .05em;
             }
 
             .rows > li > a + ul{
                 display: none;
             }
             .rows > li > a:hover{
-                background: rgba(100,100,100,1);
+                background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+
             }
 
 
@@ -123,82 +129,112 @@ position: relative;
                 margin:0; 
                 display: none;
                 list-style: none;
-                                justify-content: flex-start;
+                justify-content: flex-start;
                 flex-direction:column;
                 width: 100%;
 
-               
+
             }
             .rows > li:hover > ul {
                 display: flex;
             }
-            
+
             .rows > li > ul > li{
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: auto;
             }
 
+            .rows > li > ul > li >a:hover{
+
+                color: #fff;
+            }
+
+            .rows > li > ul > li:hover{
+                 background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+
+            }
+
             .rows > li > ul > li > a{
-                 text-decoration: none;
+                text-decoration: none;
                 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
                 font-weight: normal;
-                font-size: 15px;
+                font-size: 12px;
                 text-align: center;
-                color: #fff;
-                padding: 5px 0;
+                color: #adc9fa;
+                padding: 15px 0;
                 background: rgba(100,100,100,.2);
                 display: block;
-             
-                
+                text-transform: uppercase;
+                letter-spacing: .05em;
+
+
             }
-            .squares{
-                background: rgba(100,100,100,.75);
-            }
+
 
         </style>
     </head>
     <body>
-
         <div id="grad">
-            <div class="main">
 
-                <div class="grid">
-                    <div class="navigation">
-                        <ul class="rows">
-                            <li class="menu"><a href="index.html" style="background:none; padding: 0px;"><img class="logo" src="images/CPSlogo.png" /></a></li>
-                            <li class="menu"><a href="#" onclick="toggle_visibility('about');">about</a></li>
-                            <li  class="menu"><a href="#">upgrades</a></li>
-                            <li  class="menu"><a href="#">parts</a></li>
-                            <li  class="menu"><a href="#">services</a>
-                                <ul>
-                                    <li><a href="#">engineering</a></li>
-                                    <li><a href="#">field services</a></li>
-                                    <li><a href="#">training</a></li>
-                                </ul>
-                            </li>
-                            <li  class="menu"><a href="#">contact</a>
-                                <ul>
-                                    <li><a href="#">california</a></li>
-                                    <li><a href="#">arizona</a></li>
-                                    <li><a href="#">europe</a></li>
-                                </ul>
-                            </li>
+            <div class="grid">
+                <ul class="rows">
+                    <li><a href="index.html" style="background:none; padding: 0px;"><img class="logo" src="images/CPSlogo.png" /></a></li>
+                    <li class="menu"><a href="#" onclick="toggle_visibility('about');">about</a></li>
+                    <li  class="menu"><a href="#">upgrades</a></li>
+                    <li  class="menu"><a href="#">parts</a></li>
+                    <li  class="menu"><a href="#">services</a>
+                        <ul>
+                            <li><a href="#">engineering</a></li>
+                            <li><a href="#">field services</a></li>
+                            <li><a href="#">training</a></li>
                         </ul>
-                    </div>
-                    <!--<ul class="rows">
-                        <li class="squares"><img src="images/square.png" /></li>
-                        <li class="squares"><img src="images/square.png" /></li>
-                        <li class="squares"><img src="images/square.png" /></li>
-                        <li class="squares"><img src="images/square.png" /></li>
-                        <li class="squares"><img src="images/square.png" /></li>
-                        <li class="squares"><img src="images/square.png" /></li>
-                    </ul>-->
+                    </li>
+                    <li  class="menu"><a href="#">contact</a>
+                        <ul>
+                            <li><a href="#">california</a></li>
+                            <li><a href="#">arizona</a></li>
+                            <li><a href="#">europe</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                </div>
+                <ul class="rows" style="background: rgba(100,100,100,.10);">
+                    <li style="background: rgba(100,100,100,.50); height: 100%;"><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                </ul>
+                <ul class="rows" style="background: rgba(100,100,100,.2);">
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                </ul><ul class="rows" style="background: rgba(100,100,100,.10);">
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                </ul><ul class="rows" style="background: rgba(100,100,100,.20);">
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                    <li><img src="images/square.png" /></li>
+                </ul>
 
             </div>
-
         </div>
+
     </body>
 </html>
