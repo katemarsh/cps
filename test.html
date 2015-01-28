@@ -65,6 +65,9 @@ All Rights Reserved.
 
             .logo{
                 max-width: 100%; 
+                position: relative;
+                top: 1.7vh;
+                z-index: -2;
             }
 
 
@@ -122,7 +125,7 @@ All Rights Reserved.
                 flex-shrink:1;
                 flex-basis: 0;
                 float:none;
-                
+
 
             }
 
@@ -135,12 +138,12 @@ All Rights Reserved.
                 text-decoration: none;
                 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
                 font-weight: normal;
-                font-size: 15px;
+                font-size: 1.2vh;
                 text-align: center;
                 color: #adc9fa;
                 padding: 15px 0;
                 text-transform: uppercase;
-                letter-spacing: .05em;
+                letter-spacing: .1em;
             }
 
             .rows > li > a + ul{
@@ -166,6 +169,7 @@ All Rights Reserved.
                 height: 18vh;
                 align-items: stretch;
 
+
             }
             .rows > li:hover > ul {
                 display: flex;
@@ -179,6 +183,11 @@ All Rights Reserved.
                 flex-shrink: 1;
                 flex-basis: auto;
                 z-index: 100;
+                background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+
             }
 
             .rows > li > ul > li >a:hover{
@@ -198,14 +207,14 @@ All Rights Reserved.
                 text-decoration: none;
                 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
                 font-weight: normal;
-                font-size: 12px;
+                font-size: 1.2vh;
                 text-align: center;
                 color: #adc9fa;
-                padding: 15px 0;
-                background: rgba(100,100,100,.2);
+                vertical-align: middle;
+                padding: 14%;
                 display: block;
                 text-transform: uppercase;
-                letter-spacing: .05em;
+                letter-spacing: .1em;
             }
 
             .square{
