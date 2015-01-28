@@ -60,7 +60,7 @@ All Rights Reserved.
                 background: linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* Standard syntax */
                 width: 100%;
                 height: 100%;
-                z-index: -50;
+
             }
 
             .logo{
@@ -72,21 +72,22 @@ All Rights Reserved.
 
             .grid{
 
-                height:70vh;
-                width:70vh;
+                height:90vh;
+                width:100vh;
                 display: flex;
                 flex-direction: column;
                 position: relative;
                 margin: auto;
-                padding-top: 10%;
-overflow: hidden;
+
+                overflow: hidden;
+                z-index: 1;
 
 
             }
 
             .menu{
                 align-self:flex-end;
-                z-index: 100;
+
                 background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Safari 5.1 to 6.0 */
                 background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Opera 11.1 to 12.0 */
                 background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Firefox 3.6 to 15 */
@@ -121,6 +122,7 @@ overflow: hidden;
                 flex-shrink:1;
                 flex-basis: 0;
                 float:none;
+                
 
             }
 
@@ -158,21 +160,25 @@ overflow: hidden;
                 margin:0; 
                 display: none;
                 list-style: none;
-                justify-content: flex-start;
-                flex-direction:column;
                 width: 100%;
-
+                justify-content: space-around;
+                flex-direction:column;
+                height: 18vh;
+                align-items: stretch;
 
             }
             .rows > li:hover > ul {
                 display: flex;
-                z-index: 2000;
+
+
+
             }
 
             .rows > li > ul > li{
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: auto;
+                z-index: 100;
             }
 
             .rows > li > ul > li >a:hover{
@@ -181,10 +187,10 @@ overflow: hidden;
             }
 
             .rows > li > ul > li:hover{
-                background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
-                background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
-                background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
-                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+                background: rgba(255,255,255,.25); /* For Safari 5.1 to 6.0 */
+                background: rgba(255,255,255,.25); /* For Opera 11.1 to 12.0 */
+                background: rgba(255,255,255,.25); /* For Firefox 3.6 to 15 */
+                background: rgba(255,255,255,.25); /* Standard syntax */
 
             }
 
@@ -206,27 +212,29 @@ overflow: hidden;
                 flex-grow: 1;
                 flex-shrink:1;
                 flex-basis: 0;
-                z-index: 100;
+
             }
 
             .slideshow{
 
-                width: 70vh;
+                width: 100vh;
                 position: relative;
                 margin: auto;
                 overflow: hidden;
+                z-index: -1;
+
             }
 
             .photo{
                 margin: auto;
-                width: 100%;
-                z-index: -1;
+                height: 100%;
+                width:100%;
+
             }
         </style>
     </head>
     <body>
         <div id="grad">
-
             <div class="grid">
                 <ul class="rows">
                     <li><a href="index.html" style="background:none; padding: 0px;"><img class="logo" src="images/CPSlogo.png" /></a></li>
@@ -250,45 +258,42 @@ overflow: hidden;
                 </ul>
 
                 <div class="rows">
-                    <div class= "square" style="background: rgba(100,100,100,0);">
+                    <div class= "square">
                         <div class="slideshow">
                             <img src="images/slideshow1.jpg" class="photo" />
                         </div>
                     </div>
-                    <div class= "square" style="background: rgba(100,100,100,.5);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.2);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.80);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div>
                 </div>
                 <div class="rows">
-                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.50);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.05);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div> 
+                    <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div> 
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div> 
                 </div>
                 <div class="rows">
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.50);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.5);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.1);"><img src="images/square.png" /></div> 
+                    <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div> 
                 </div>
                 <div class="rows">
-                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.20);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.5);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(100,100,100,.50);"><img src="images/square.png" /></div> 
+                    <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div> 
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div>  
                 </div>
             </div>
-
         </div>
-
-
     </body>
 </html>
