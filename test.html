@@ -11,6 +11,26 @@ All Rights Reserved.
         <title>CPS Website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.bxslider').bxSlider({
+                    mode: 'fade',
+                    auto: true,
+                    controls: false,
+                    speed: 7000
+                });
+            });
+
+
+            //function toggle_visibility(id) {
+            //var e = document.getElementById(id);
+            // if (e.style.visibility = 'hidden')
+            //    e.style.visibility = 'visible';
+            // else
+            //    e.style.display = 'hidden';
+            //  }
+
+        </script>
         <style>
 
             /*           css reset*/
@@ -53,6 +73,7 @@ All Rights Reserved.
                 margin: auto;
                 padding-top: 10%;
                 width: 70%;
+                overflow: hidden;
 
             }
 
@@ -69,7 +90,8 @@ All Rights Reserved.
                 list-style:none; 
                 float:left; /* Clear floats */
                 width:100%;
-position: relative;
+                position: relative;
+                height: 100%;
 
                 display: -webkit-box;
                 display: -moz-box;
@@ -78,7 +100,7 @@ position: relative;
                 display: flex;
 
                 flex-grow:1;
-                flex-basis:0;
+                flex-basis:auto;
                 flex-direction: row;
                 justify-content: space-between;
 
@@ -151,7 +173,7 @@ position: relative;
             }
 
             .rows > li > ul > li:hover{
-                 background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+                background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
                 background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
                 background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
                 background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
@@ -170,11 +192,20 @@ position: relative;
                 display: block;
                 text-transform: uppercase;
                 letter-spacing: .05em;
-
-
             }
 
+            .square{
+                flex-grow: 1;
+                flex-shrink:1;
+                flex-basis: 0;
 
+            }
+            .slideshow{
+                z-index: -100;
+                display: flex;
+                margin: auto;
+                
+            }
         </style>
     </head>
     <body>
@@ -201,40 +232,48 @@ position: relative;
                         </ul>
                     </li>
                 </ul>
-
-                <ul class="rows" style="background: rgba(100,100,100,.10);">
-                    <li style="background: rgba(100,100,100,.50); height: 100%;"><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                </ul>
-                <ul class="rows" style="background: rgba(100,100,100,.2);">
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                </ul><ul class="rows" style="background: rgba(100,100,100,.10);">
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                </ul><ul class="rows" style="background: rgba(100,100,100,.20);">
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                    <li><img src="images/square.png" /></li>
-                </ul>
-
+                <div class="rows">
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.2);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                </div>
+                <div class="rows">
+                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.150);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div> 
+                </div>
+                <div class="rows">
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.150);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                </div>
+                <div class="rows">
+                    <div class= "square" style="background: rgba(100,100,100,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.20);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.05);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.10);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,0);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(100,100,100,.150);"><img src="images/square.png" /></div> 
+                </div>
             </div>
+                <div class="slideshow">
+                    <ul class="bxslider">
+                        <li><img src="images/slideshow1.jpg" /></li>
+                        <li><img src="images/slideshow2.jpg" /></li>
+                        <li><img src="images/slideshow3.jpg" /></li>
+                    </ul>
+                </div>
         </div>
+
 
     </body>
 </html>
