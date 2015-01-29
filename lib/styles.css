@@ -7,3 +7,266 @@ All Rights Reserved.
     Author     : kate
 */
 
+
+/*           css reset*/
+* {margin: 0;padding: 0;outline: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*:after, *:before { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {  display: block;}
+html {font-size: 100%;height: auto !important;height: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+.clear {display: block;	}
+.clear::after {clear: both;content: ".";display: block;height: 1px;visibility: hidden;}
+
+
+body{
+    background-image: url("../images/rebel.png");
+    margin:0;
+}
+
+#grad{
+    background: -webkit-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* Standard syntax */
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.logo{
+    width: 100%; 
+    position: relative;
+    top: 4.5vh;
+
+
+}
+
+
+
+
+.grid{
+
+    height:90vh;
+    width:100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+
+    overflow: hidden;
+
+
+
+}
+
+.menu{
+    align-self:flex-end;
+
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* Standard syntax */
+
+}
+.rows{
+    list-style:none; 
+    float:left; /* Clear floats */
+    width:100%;
+    position: relative;
+    height: 100%; 
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-grow:1;
+    flex-basis:auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.rows > li{
+    position: relative;
+    flex-grow: 1;
+    align-self: flex-end;
+    list-style: none;
+    flex-shrink:1;
+    flex-basis: 0;
+    float:none;
+    z-index: 5;
+
+
+
+}
+
+.rows > li > a{
+    position: relative;
+    margin:0; 
+    display: block;
+
+    /* styling: */
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2vh;
+    text-align: center;
+    color: #adc9fa;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+
+
+}
+
+.rows > li > a + ul{
+    display: none;
+}
+.rows > li > a:hover{
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+
+}
+
+
+.rows > li > ul {
+    position: absolute;
+    margin:0; 
+    display: none;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction:column;
+    height: 18vh;
+    align-items: stretch;
+
+
+}
+.rows > li:hover > ul {
+    display: flex;
+
+
+
+}
+
+.rows > li > ul > li{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+
+}
+
+.rows > li > ul > li >a:hover{
+
+    color: #fff;
+}
+
+.rows > li > ul > li:hover{
+    background: rgba(255,255,255,.25); /* For Safari 5.1 to 6.0 */
+    background: rgba(255,255,255,.25); /* For Opera 11.1 to 12.0 */
+    background: rgba(255,255,255,.25); /* For Firefox 3.6 to 15 */
+    background: rgba(255,255,255,.25); /* Standard syntax */
+
+}
+
+.rows > li > ul > li > a{
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2vh;
+    text-align: center;
+    color: #adc9fa;
+    vertical-align: middle;
+    padding: 14%;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.square{
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-basis: 0;
+z-index: 1;
+}
+
+.slideshow{
+
+    width: 100vh;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+
+}
+.bxslider{
+    width: 100%;
+
+}
+.photo{
+    margin: auto;
+    height: 100%;
+    width:100%;
+
+}
+
+.text{
+/*    display: flex;*/
+    width: 100vh;
+    height: 72.1vh;
+    position: relative;
+
+    margin: auto;
+
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*align-content: space-around;*/
+
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px; 
+    line-height: 1.5;
+z-index: 2;
+    top: -72vh;
+}
+
+.leftcol4{
+    overflow: auto;    
+    background: rgba(1,28,87,.8);    
+
+    /*flex-grow: 2;*/
+
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 8vh;
+    width: 66.66%;
+    float: left;
+}
+
+.leftcol4 p{
+    padding-top: 1vh;
+}
+.rightcol2{
+    padding: 4vh; 
+    /*flex-grow: 1;*/
+     
+    margin: 20% 0 0 4.5%; 
+    width:25%;
+    position: relative;
+    float: left;
+    background: rgba(1,28,87,.8);
+    font-style: oblique;
+   
+
+
+}
