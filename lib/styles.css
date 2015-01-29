@@ -154,23 +154,24 @@ body{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* Standard syntax */
 
 }
 
 .rows > li > ul > li >a:hover{
 
-    color: #fff;
+    color: rgba(1,28,87,1);
+    font-weight:600;
 }
 
 .rows > li > ul > li:hover{
-    background: rgba(255,255,255,.25); /* For Safari 5.1 to 6.0 */
-    background: rgba(255,255,255,.25); /* For Opera 11.1 to 12.0 */
-    background: rgba(255,255,255,.25); /* For Firefox 3.6 to 15 */
-    background: rgba(255,255,255,.25); /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* Standard syntax */
 
 }
 
@@ -219,7 +220,7 @@ body{
 
 .leftcol4{
     overflow: auto;    
-    background: rgba(1,28,87,.8);    
+    background: rgba(1,28,87,.9);    
     position: relative;
     height: 100%;
     margin: 0;
@@ -235,14 +236,14 @@ body{
     /* width:25%; */
     position: relative;
     /* float: left; */
-    background: rgba(1,28,87,.8);
+    background: rgba(1,28,87,.9);
     max-height: 60vh;
     max-width: 25vh;
 }
 
 .leftcol3lg{
     overflow: auto;    
-    background: rgba(1,28,87,.8);    
+    background: rgba(1,28,87,.9);    
     position: relative;
     height: 100%;
     margin: 0;
@@ -254,7 +255,7 @@ body{
 .rightcol3sm{
     padding: 3vh; 
     position: relative;
-    background: rgba(1,28,87,.8);
+    background: rgba(1,28,87,.9);
     max-height: 35vh;
     max-width: 40vh;
     margin: auto;
@@ -270,7 +271,7 @@ body{
 }
 .leftcol3sm{
     overflow: auto;    
-    background: rgba(1,28,87,.8);    
+    background: rgba(1,28,87,.9);    
     position: relative;
     padding: 3vh; 
     margin: auto; 
@@ -287,7 +288,7 @@ body{
     width: 50.00%;
     position: relative;
     float: right;
-    background: rgba(1,28,87,.8);
+    background: rgba(1,28,87,.9);
     height:100%;
     overflow: auto;
 }
@@ -301,7 +302,7 @@ body{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 1.4vh;
+    font-size: 2vh;
     color: #adc9fa;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -326,7 +327,7 @@ body{
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 1.2vh; 
+    font-size: 1.6vh; 
     line-height: 1.5; 
     letter-spacing: .05em;
     padding: .5vh 0;
@@ -347,7 +348,7 @@ body{
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 1.4vh; 
+    font-size: 1.6vh; 
     line-height: 1.5;
     letter-spacing: .05em;
     font-style: oblique;
