@@ -247,18 +247,27 @@ body{
     position: relative;
     height: 100%;
     margin: 0;
-    padding: 8vh;
+    padding: 5vh;
     width: 50%;
     float: left;
+    
 }
 
 .rightcol3sm{
     padding: 3vh; 
     position: relative;
     background: rgba(1,28,87,.9);
-    max-height: 35vh;
+    /* max-height: 35vh; */
     max-width: 40vh;
     margin: auto;
+}
+
+.locationPhoto{
+    position: relative;
+    max-width: 100%;
+    max-height: 45vh;
+    /* margin: auto; */
+    
 }
 
 .column{
@@ -353,4 +362,17 @@ body{
     letter-spacing: .05em;
     font-style: oblique;
     padding: none;
+}
+
+.link{
+    text-decoration: none; 
+    color: #adc9fa; 
+    text-transform: uppercase; 
+    font-weight: 400;
+    letter-spacing: .1em;
+
+}
+
+.blue{
+    color: #adc9fa; 
 }
