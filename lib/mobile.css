@@ -1,65 +1,41 @@
-/*
-Copyright (c) 2015 KE Art and Design.
-All Rights Reserved.
-*/
-/* 
-    Created on : Jan 8, 2015, 9:37:42 AM
-    Author     : kate
-*/
 
+/* Styles */
+.grid{
 
-/*           css reset*/
-* {margin: 0;padding: 0;outline: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;list-style-position: inside;}
-*:after, *:before { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {  display: block;}
-html {font-size: 100%;height: auto !important;height: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
-.clear {display: block;	}
-.clear::after {clear: both;content: ".";display: block;height: 1px;visibility: hidden;}
+    height: 100vw;
+    width:100vw;
+    display: flex;
+    
 
+    flex-direction: column;
+    
 
-body{
-    background-image: url("../images/rebel.png");
-    margin:0;
+    position: relative;
+    margin: auto;
+
     overflow: hidden;
-}
+    
 
-#grad{
-    background: -webkit-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(1,28,87,1),rgba(1,28,87,0)); /* Standard syntax */
-    width: 100%;
-    height: 100%;
+    /* flex-wrap: wrap; */
 
+    flex-basis: auto;
+
+    /* overflow: hidden; */
 
 }
+
+
 
 .logo{
-    /* width: 100%; */ 
+    width: 100%; 
     position: relative;
-    top: 4.5vh;
+    top: 3vh;
 
 
     /* z-index: -5; */
 }
 
 
-
-
-.grid{
-
-    height:90vh;
-    width:100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: auto;
-
-    overflow: hidden;
-
-
-
-}
 
 .menu{
     align-self:flex-end;
@@ -71,29 +47,17 @@ body{
 
 }
 .nav{
+
     list-style:none; 
-    float:left; /* Clear floats */
+    
+
+    float: left; /* Clear floats */
+    
+
     /* width:100%; */
     position: relative;
-    height: 100%; 
+    
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-     flex-grow:1; 
-    flex-basis: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-shrink: 1;
-}
-.rows{
-    list-style:none; 
-    float:left; /* Clear floats */
-    width:100%;
-    position: relative;
     height: 100%; 
 
     display: -webkit-box;
@@ -103,27 +67,35 @@ body{
     display: flex;
 
     flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis:auto;
-    flex-direction: row;
-    justify-content: space-between;
+    
 
+    /* flex-basis:auto; */
+    
+
+    flex-direction: row;
+    /* justify-content: space-around; */
+
+
+    flex-wrap: wrap;
+    margin-bottom: 18.5vh;
 
 }
+
+
 
 .nav > li{
     position: relative;
     flex-grow: 1;
-    /* align-self: flex-end; */
+    align-self: flex-end;
     list-style: none;
-    /* flex-shrink:1; */
-    /* flex-basis: 0; */
+    flex-shrink:1;
+    flex-basis: 0;
     float:none;
     z-index: 5;
 
 
 
-    /* min-width: 30%; */
+    min-width: 30%;
 }
 
 .nav > li > a{
@@ -208,14 +180,24 @@ body{
     flex-shrink:1;
     flex-basis: 0;
     z-index: 1;
+    /* flex-wrap: wrap; */
+    /* top: 1vh; */
 }
 
 .slideshow{
 
     width: 100vh;
+    
+
     position: relative;
+    
+
     margin: auto;
+    
+
     overflow: hidden;
+
+    visibility: hidden;
 
 }
 .bxslider{
@@ -237,6 +219,7 @@ body{
 
     z-index: 2;
     top: -72vh;
+    visibility: hidden;
 }
 
 
@@ -323,79 +306,3 @@ body{
     height:100%;
     overflow: auto;
 }
-
-/*Font styling*/
-.title{
-
-}
-
-.subTitle{
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 2vh;
-    color: #adc9fa;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    padding: .5vh 0;
-}
-
-.menuTitle a{
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1.3vh;
-    text-align: center;
-    color: #adc9fa;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    padding: 0;
-    
-    
-}
-
-.bodyText{
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: 1.6vh; 
-    line-height: 1.5; 
-    letter-spacing: .05em;
-    padding: .5vh 0;
-}
-
-.list{
-    list-style: circle;
-    padding-top: .5vh;
-
-}
-
-.list li{
-    margin-left: 2vh;
-    padding-top: .5vh;
-    list-style-position: outside;
-}
-.pullQuote{
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: 1.6vh; 
-    line-height: 1.5;
-    letter-spacing: .05em;
-    font-style: oblique;
-    padding: none;
-}
-
-.link{
-    text-decoration: none; 
-    color: #adc9fa; 
-    text-transform: uppercase; 
-    font-weight: 400;
-    letter-spacing: .1em;
-
-}
-
-.blue{
-    color: #adc9fa; 
-}
-
