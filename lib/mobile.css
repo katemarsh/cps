@@ -1,5 +1,10 @@
 
 /* Styles */
+
+body {
+
+overflow: visible;
+}
 .grid{
 
     height: 100vw;
@@ -40,10 +45,10 @@
 .menu{
     align-self:flex-end;
 
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Safari 5.1 to 6.0 */
+    /* background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); */ /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* Standard syntax */
+    /* background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); */ /* Standard syntax */
 
 }
 .nav{
@@ -195,9 +200,9 @@
     margin: auto;
     
 
-    overflow: hidden;
+    /* overflow: visible; */
 
-    visibility: hidden;
+    /* visibility: hidden; */
 
 }
 .bxslider{
@@ -212,14 +217,16 @@
 }
 
 .text{
-    width: 100vh;
-    height: 72.1vh;
+    width: 100%;
     position: relative;
     margin: auto;
 
     z-index: 2;
-    top: -72vh;
-    visibility: hidden;
+    top: 5vh;
+    /* visibility: hidden; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -229,42 +236,46 @@
     position: relative;
     height: 100%;
     margin: 0;
-    padding: 8vh;
-    width: 66.67%;
+    padding: 6vh;
+    width: 100%;
     float: left;
+    order: 2;
 }
 
 
 .rightcol2{
     padding: 3vh; 
-    margin: auto; 
+    margin: 4vh auto; 
     /* width:25%; */
     position: relative;
     /* float: left; */
     background: rgba(1,28,87,.9);
-    max-height: 60vh;
-    max-width: 25vh;
+    max-height: 100%;
+    max-width: 80%;
+    width: 100%;
 }
 
 .leftcol3lg{
-    overflow: auto;    
+    overflow: visible;    
     background: rgba(1,28,87,.9);    
     position: relative;
     height: 100%;
-    margin: 0;
+    margin: 2vh auto;
     padding: 5vh;
-    width: 50%;
+    width: 100%;
     float: left;
     
+    order: 2;
 }
 
 .rightcol3sm{
     padding: 3vh; 
     position: relative;
     background: rgba(1,28,87,.9);
-    /* max-height: 35vh; */
-    max-width: 40vh;
-    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 2vh auto;
+    width: 100%;
 }
 
 .locationPhoto{
@@ -278,31 +289,34 @@
 .column{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto 4vh auto;
     align-content: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 .leftcol3sm{
-    overflow: auto;    
+    overflow: visible;    
     background: rgba(1,28,87,.9);    
     position: relative;
     padding: 3vh; 
-    margin: auto; 
-    max-width: 40vh;
-    /* max-height: 35vh; */
+    margin: 2vh auto; 
+    max-width: 100%;
+    max-height: 100%;
     /* float: right; */
      
     /* flex-grow:1; */ 
     /* flex-basis: auto; */
+    order: 1;
 }
 
 .rightcol3lg{
-    padding: 8vh; 
-    width: 50.00%;
+    padding: 6vh; 
+    width: 100%;
     position: relative;
     float: right;
     background: rgba(1,28,87,.9);
     height:100%;
     overflow: auto;
+    order: 2;
 }
