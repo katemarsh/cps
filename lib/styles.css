@@ -89,7 +89,7 @@ body {
         -ms-flex-item-align: end;
             align-self: flex-end;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
-    behavior: url(../pie/PIE.htc);
+    /*behavior: url(../pie/PIE.htc);*/
 }
 
 .rows {
@@ -179,13 +179,13 @@ body {
 
 .nav > li > a:hover {
     background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25));
-        behavior: url(../pie/PIE.htc);
+        /*behavior: url(../pie/PIE.htc);*/
 
 }
 
 .menuHighlight {
     background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); 
-    behavior: url(../pie/PIE.htc);
+    /*behavior: url(../pie/PIE.htc);*/
 
 }
 
@@ -224,7 +224,7 @@ body {
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
     background: linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); 
-    behavior: url(../pie/PIE.htc);
+/*    behavior: url(../pie/PIE.htc);*/
 }
 
 .nav > li > ul > li > a:hover {
@@ -234,7 +234,7 @@ body {
 
 .nav > li > ul > li:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
-    behavior: url(../pie/PIE.htc);
+    /*behavior: url(../pie/PIE.htc);*/
 }
 
 .nav > li > ul > li > a {
