@@ -5,204 +5,73 @@ body {
 
 overflow: visible;
 }
+
+.logo{
+    top: 3vh;
+}
+
 .grid{
 
     height: 100vw;
     width:100vw;
-    display: flex;
-    
-
-    flex-direction: column;
-    
-
-    position: relative;
-    margin: auto;
-
-    overflow: hidden;
-    
-
-    /* flex-wrap: wrap; */
-
     flex-basis: auto;
 
-    /* overflow: hidden; */
-
 }
 
-
-
-.logo{
-    width: 100%; 
-    position: relative;
-    top: 3vh;
-
-
-    /* z-index: -5; */
-}
-
-
-
-.menu{
-    align-self:flex-end;
-
-    /* background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); */ /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); /* For Firefox 3.6 to 15 */
-    /* background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.15)); */ /* Standard syntax */
-
-}
 .nav{
-
-    list-style:none; 
-    
-
-    float: left; /* Clear floats */
-    
-
-    /* width:100%; */
-    position: relative;
-    
-
-    height: 100%; 
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    flex-grow: 1;
-    
-
-    /* flex-basis:auto; */
-    
-
-    flex-direction: row;
-    /* justify-content: space-around; */
-
-
     flex-wrap: wrap;
     margin-bottom: 18.5vh;
-
 }
 
 
 
 .nav > li{
-    position: relative;
-    flex-grow: 1;
-    align-self: flex-end;
-    list-style: none;
-    flex-shrink:1;
-    flex-basis: 0;
-    float:none;
-    z-index: 5;
-
-
-
-    min-width: 30%;
+        min-width: 30%;
 }
 
 .nav > li > a{
-    position: relative;
-    margin:0; 
-    display: block;
-    padding: 15px 0;
-    text-decoration: none;
+    
 }
 
 .nav > li > a + ul{
-    display: none;
+
 }
 .nav > li > a:hover{
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
-
+   
 }
 
 .menuHighlight{   
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); /* Standard syntax */
+ 
 }
 
 .nav > li > ul {
-    position: absolute;
-    margin:0; 
-    display: none;
-    list-style: none;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction:column;
-    height: 18vh;
-    align-items: stretch;
-
-
+    
 }
 .nav > li:hover > ul {
-    display: flex;
-
-
 
 }
 
 .nav > li > ul > li{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    background: -webkit-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); /* Standard syntax */
-
+  
 }
 
 .nav > li > ul > li >a:hover{
 
-    color: rgba(1,28,87,1);
-    font-weight:600;
 }
 
 .nav > li > ul > li:hover{
-    background: -webkit-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,1)); /* Standard syntax */
-
+  
 }
 
 .nav > li > ul > li > a{
-    text-decoration: none;
-    padding: 14%;
-    display: block;
+    
 }
 
 .square{
-    flex-grow: 1;
-    flex-shrink:1;
-    flex-basis: 0;
-    z-index: 1;
-    /* flex-wrap: wrap; */
-    /* top: 1vh; */
+    
 }
 
 .slideshow{
-
-    width: 100vh;
-    
-
-    position: relative;
-    
-
-    margin: auto;
-    
-
-    /* overflow: visible; */
-
-    /* visibility: hidden; */
 
 }
 
@@ -211,24 +80,15 @@ overflow: visible;
     height: 100%;
 }
 .bxslider{
-    width: 100%;
-
+    
 }
 .photo{
-    margin: auto;
-    height: 100%;
-    width:100%;
 
 }
 
 .text{
     width: 100%;
-    position: relative;
-    margin: auto;
-
-    z-index: 2;
     top: 5vh;
-    /* visibility: hidden; */
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -236,11 +96,6 @@ overflow: visible;
 
 
 .leftcol4{
-    overflow: auto;    
-    background: rgba(1,28,87,.9);    
-    position: relative;
-    height: 100%;
-    margin: 0;
     padding: 6vh;
     width: 100%;
     float: left;
@@ -249,12 +104,7 @@ overflow: visible;
 
 
 .rightcol2{
-    padding: 3vh; 
     margin: 4vh auto; 
-    /* width:25%; */
-    position: relative;
-    /* float: left; */
-    background: rgba(1,28,87,.9);
     max-height: 100%;
     max-width: 80%;
     width: 100%;
@@ -262,21 +112,12 @@ overflow: visible;
 
 .leftcol3lg{
     overflow: visible;    
-    background: rgba(1,28,87,.9);    
-    position: relative;
-    height: 100%;
     margin: 2vh auto;
-    padding: 5vh;
     width: 100%;
-    float: left;
-    
     order: 2;
 }
 
 .rightcol3sm{
-    padding: 3vh; 
-    position: relative;
-    background: rgba(1,28,87,.9);
     max-height: 100%;
     max-width: 100%;
     margin: 2vh auto;
@@ -284,44 +125,24 @@ overflow: visible;
 }
 
 .locationPhoto{
-    position: relative;
-    max-width: 100%;
-    max-height: 45vh;
-    /* margin: auto; */
-    
+   
 }
 
 .column{
-    display: flex;
-    flex-direction: column;
     margin: 0 auto 4vh auto;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
     width: 100%;
 }
 .leftcol3sm{
     overflow: visible;    
-    background: rgba(1,28,87,.9);    
-    position: relative;
-    padding: 3vh; 
+   
     margin: 2vh auto; 
     max-width: 100%;
     max-height: 100%;
-    /* float: right; */
-     
-    /* flex-grow:1; */ 
-    /* flex-basis: auto; */
     order: 1;
 }
 
 .rightcol3lg{
     padding: 6vh; 
     width: 100%;
-    position: relative;
-    float: right;
-    background: rgba(1,28,87,.9);
-    height:100%;
-    overflow: auto;
     order: 2;
 }
