@@ -72,7 +72,7 @@ body {
 }
 .logoMenu{
     background: none; 
-    height: 26vh;
+    height: 18vh;
 }
 .logoIe{
     visibility: hidden;
@@ -96,7 +96,9 @@ body {
             flex-direction: column;
     position: relative;
     margin: auto;
-    overflow: hidden}
+    overflow: hidden;
+top:-72vh;
+}
 
 .menu {
     -webkit-align-self: flex-end;
@@ -131,6 +133,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between
+;z-index: 1;
 }
 
 .nav {
@@ -161,6 +164,7 @@ body {
             flex-shrink: 1
 ;
     /* margin-bottom: 2vh; */
+    z-index: 2;
 }
 
 .nav > li {
@@ -267,15 +271,17 @@ body {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
             flex-basis: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .slideshow {
     width: 100vh;
+    height: 72vh;
     position: relative;
     margin: auto;
     overflow: hidden;
     z-index: 1;
+    top: 18vh;
 }
 
 .bxslider {
@@ -293,8 +299,8 @@ body {
     height: 72.1vh;
     position: relative;
     margin: auto;
-    z-index: 2;
-    top: -72vh;
+    z-index: 1;
+    top: -144vh;
         
   scrollbar-base-color: #011C57;
   scrollbar-3dlight-color: #011C57;

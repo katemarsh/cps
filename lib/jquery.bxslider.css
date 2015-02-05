@@ -61,7 +61,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2000;
 }
 
 /* PAGER */
@@ -128,7 +127,7 @@
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
