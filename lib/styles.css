@@ -104,7 +104,7 @@ top:-72vh;
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, 0.25));
     /*behavior: url(../pie/PIE.htc);*/
 }
 
@@ -202,10 +202,10 @@ top:-72vh;
 }
 
 .menuHighlight {
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); 
+    background: linear-gradient(rgba(255, 255, 255, .15), rgba(255, 255, 255, 0.5));
     /*behavior: url(../pie/PIE.htc);*/
-
 }
+
 
 .nav > li > ul {
     position: absolute;
@@ -251,13 +251,13 @@ top:-72vh;
 }
 
 .nav > li > ul > li:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+    background: linear-gradient(rgba(173, 201, 250, 1), rgba(255, 255, 255, 0.95));
     /*behavior: url(../pie/PIE.htc);*/
 }
 
 .nav > li > ul > li > a {
     text-decoration: none;
-    padding: 14%;
+    padding: 14% 5%;
     display: block
 }
 
@@ -314,7 +314,7 @@ top:-72vh;
 
 .leftcol4 {
     overflow: auto;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     position: relative;
     height: 100%;
     margin: 0;
@@ -327,14 +327,14 @@ top:-72vh;
     padding: 3vh;
     margin: auto;
     position: relative;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     max-height: 60vh;
     max-width: 25vh;
 }
 
 .leftcol3lg {
     overflow: auto;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     position: relative;
     height: 100%;
     margin: 0;
@@ -346,7 +346,7 @@ top:-72vh;
 .rightcol3sm {
     padding: 3vh;
     position: relative;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     max-width: 40vh;
     margin: auto;
 /*        flex-grow: 1;
@@ -384,7 +384,7 @@ top:-72vh;
 
 .leftcol3sm {
     overflow: auto;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     position: relative;
     padding: 3vh;
     margin: auto;
@@ -401,7 +401,7 @@ top:-72vh;
     width: 50%;
     position: relative;
     float: right;
-    background: rgba(1, 28, 87, 0.9);
+    background: rgba(1, 28, 87, 0.95);
     height: 100%;
     overflow: auto
 }
@@ -410,8 +410,8 @@ top:-72vh;
 .subTitle {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 2vh;
+    font-weight: 600;
+    font-size: 1.5vh;
     color: #adc9fa;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -421,8 +421,8 @@ top:-72vh;
 .menuTitle a {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 1.3vh;
+    font-weight: 600;
+    font-size: 1.5vh;
     text-align: center;
     color: #adc9fa;
     text-transform: uppercase;
@@ -430,10 +430,13 @@ top:-72vh;
     padding: 0;
 }
 
+.menuHighlight > a{
+    color: white;
+}
 .bodyText {
     color: #fff;
     font-family: "Raleway", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.6vh;
     line-height: 1.5;
     letter-spacing: 0.05em;
@@ -455,7 +458,7 @@ top:-72vh;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
-    font-size: 1.6vh;
+    font-size: 2.2vh;
     line-height: 1.5;
     letter-spacing: 0.05em;
     font-style: oblique;
