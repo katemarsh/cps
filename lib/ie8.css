@@ -3,16 +3,86 @@ Copyright (c) 2015 KE Art and Design.
 All Rights Reserved.
 */
 /* 
-    Created on : Feb 4, 2015, 2:52:45 PM
+    Created on : Jan 8, 2015, 9:37:42 AM
     Author     : kate
 */
+/*           css reset*/
 
 
+body{
+    height: 100%;
+}
 
 
+.grid {
+    margin: 100px auto auto auto;
+    top: -400px;
+
+}
+
+.square {
+
+    visibility: hidden
+}
 
 
 .text {
-    top:-1050px;
+    height: 445px;
+    position: relative;
+    top: -1010px;
 }
 
+.leftcol4 {
+   
+    background: rgb(1, 28, 87);
+    background: rgba(1, 28, 87, 0.9);
+ 
+    width: 66.7%;
+    height: 100%;
+}
+
+.rightcol2 {
+  
+    margin: 10px 1%;
+    position: relative;
+width: 30%;
+    float: right;
+}
+
+
+.rightcol3sm {
+
+    width: 40%;
+    margin: 10px 5%;
+    float: right;
+
+}
+
+.locationPhoto {
+
+    padding-left: 0;
+    margin-left: 15%;
+
+
+}
+
+.leftcol3sm {
+   
+    margin: 10px 5%;
+
+    width: 40%;
+    float: left;
+
+}
+
+
+.pullQuote {
+/*    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-style: oblique;*/
+    padding: 0;
+}
