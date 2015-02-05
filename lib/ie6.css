@@ -1,0 +1,410 @@
+/*
+Copyright (c) 2015 KE Art and Design.
+All Rights Reserved.
+*/
+/* 
+    Created on : Jan 8, 2015, 9:37:42 AM
+    Author     : kate
+*/
+/*           css reset*/
+
+body {
+    background-image: url(../images/rebelBlue.png);
+    margin: 0;
+    overflow: hidden
+}
+
+#grad {
+
+    background: linear-gradient(rgba(1, 28, 87, 1), rgba(1, 28, 87, 0));
+
+    width: 100%;
+    height: 100%
+}
+
+.logo {
+    width: 100%;
+    position: relative;
+    top: -50%;
+}
+
+.logoIe{
+    visibility: visible;
+}
+.logoAll{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+.grid {
+    width: 80%;
+
+    position: relative;
+    margin: auto;
+    overflow: hidden
+}
+
+.menu {
+
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    behavior: url(../pie/PIE.htc);
+}
+
+.rows {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: block;
+}
+
+.nav {
+    list-style: none;
+    float: left;
+    position: relative;
+    height: 100%;
+
+}
+
+.nav > ul{
+    float: left;
+}
+
+.nav > li {
+    position: relative;
+
+    float: left;
+    z-index: 5;
+}
+
+.nav > li > a {
+    position: relative;
+    margin: 0;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none
+}
+
+.nav > li > a ul {
+    display: none
+}
+
+.nav > li > a:hover {
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25));
+    behavior: url(../pie/PIE.htc);
+
+}
+
+.menuHighlight {
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.25)); 
+    behavior: url(../pie/PIE.htc);
+
+}
+
+.nav > li > ul {
+    position: absolute;
+    margin: 0;
+    display: none;
+    list-style: none;
+    width: 100%;
+
+}
+
+.nav > li:hover > ul {
+    display: block
+}
+
+.nav > li > ul > li {
+
+    background: linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); 
+    /*    behavior: url(../pie/PIE.htc);*/
+}
+
+.nav > li > ul > li > a:hover {
+    color: white;
+    font-weight: 600
+}
+
+.nav > li > ul > li:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+    behavior: url(../pie/PIE.htc);
+}
+
+.nav > li > ul > li > a {
+    text-decoration: none;
+    padding: 14%;
+    display: block
+}
+
+.square {
+
+    visibility: hidden
+}
+
+.slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bxslider {
+    width: 100%;
+}
+
+.photo {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    z-index: 2;
+    top: -570px;
+
+
+
+    scrollbar-base-color: #011C57;
+    scrollbar-3dlight-color: #011C57;
+    scrollbar-highlight-color: #011C57;
+    scrollbar-track-color: black;
+    scrollbar-arrow-color: #011C57;
+    scrollbar-shadow-color: #011C57;
+    scrollbar-dark-shadow-color: black;
+
+}
+
+.leftcol4 {
+    overflow: auto;
+    background: #011C57;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 5%;
+    width: 60%;
+    float: left;
+}
+
+.rightcol2 {
+    padding: 5%;
+    margin: auto;
+    position: relative;
+    background: #011C57;
+    width:39%;
+}
+
+.leftcol3lg {
+    overflow: auto;
+    background: #011C57;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 5%;
+    width: 50%;
+    float: left;
+}
+
+.rightcol3sm {
+    padding: 3%;
+    position: relative;
+    background: #011C57;
+    max-width: 40%;
+    margin: auto;
+
+}
+
+.locationPhoto {
+    position: relative;
+    width: 90%;
+    
+
+}
+
+.column {
+    display: block;
+    position: relative;
+    height: 100%;
+    float: none;
+
+}
+
+.leftcol3sm {
+    overflow: auto;
+    background: #011C57;
+    position: relative;
+    padding: 5%;
+    margin: auto;
+    margin-bottom: 10%;
+    width: 50%;
+
+}
+
+.rightcol3lg {
+    padding: 5%;
+    width: 50%;
+    position: relative;
+    float: right;
+    background:#011C57;
+    height: 100%;
+    overflow: auto
+}
+
+/*Font styling*/
+.subTitle {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #adc9fa;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1% 0;
+}
+
+.menuTitle a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #adc9fa;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0;
+}
+
+.bodyText {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    padding: 1% 0;
+}
+
+.list {
+    list-style: circle;
+    padding-top: 1%;
+}
+
+.list li {
+    margin-left: 2%;
+    padding-top: 1%;
+    list-style-position: outside;
+}
+
+.pullQuote {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-style: oblique;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #adc9fa;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.blue {
+    color: #adc9fa;
+}
+
+
+#nav {
+    background: none;
+    font-size: 18px;
+    font-family: verdana,sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+#nav, #nav ul {
+    float:left;
+    list-style:none;
+    line-height:40px;
+    padding:0;
+    /*    border:1px solid #aaa;*/
+    margin:0;
+    width:100%;
+}
+
+#nav a {
+    display:block;
+    color:#dddddd;
+    text-decoration:none;
+    padding:0px 10px;
+}
+#nav li {
+    z-index:999;
+    position: relative;
+    float:left;
+    padding:0;
+    width: 16%;
+}
+#nav ul {
+    position:absolute;
+    left:0em;
+    height:auto;
+    width:151px;
+    font-weight:normal;
+    margin:0;
+    line-height:1;
+    border:0;
+    text-align: left;
+}
+#nav li li {
+    width:149px;
+    font-weight:bold;
+    font-family:verdana,sans-serif;
+}
+#nav li li a {
+    padding:4px 10px;
+    width:130px;
+    font-size:12px;
+    color:#dddddd;
+}
+#nav li ul ul {
+    margin:-21px 0 0 150px;
+}
+
+/* New Stuff */
+
+#nav li a:hover{
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+/*#nav li li a:hover {
+    background:#9C1F1B;
+}
+#nav li ul li a:hover a, #nav li ul li li a:hover a, #nav li ul li li li a:hover a, #nav li ul li li li a:hover a {
+    color:#dddddd;
+}
+#nav li a:hover a, #nav li.sfhover a {
+    color:#dddddd;
+}
+#nav li a:hover li a, #nav li li a:hover li a, #nav li li li a:hover li a, #nav li li li li a:hover li a {
+    color:#dddddd;
+}
+#nav li a:hover ul ul, #nav li a:hover ul ul ul, #nav li a:hover ul ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul, #nav li.sfhover ul ul ul ul {
+    left:-999em;
+}
+#nav li a:hover ul, #nav li li a:hover ul, #nav li li li a:hover ul, #nav li li li li a:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul, #nav li li li li.sfhover ul {
+    left:0em;
+    background:#444444;
+}
+#nav li:hover, #nav li.sfhover {
+    background:#DA0909;
+}*/

@@ -31,12 +31,29 @@ All Rights Reserved.
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200' rel='stylesheet' type='text/css'>
         <link href="lib/normalize.css" rel="stylesheet" />
         <link href="lib/styles.css" rel="stylesheet" />
+        <!--[if IE 6]>
+        <link rel="stylesheet" type="text/css" href="lib/ie6.css" />
+        <style>
+            .rows{
+                visibility: hidden;
+            }
+            .grid{
+                height:700px;
+                }
+        </style>
+        <![endif]-->
+        <!--[if lt IE 10]>
+        <link rel="stylesheet" type="text/css" href="lib/all-ie.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="lib/ie8.css" />
+        <![endif]-->
     </head>
     <body>
         <div id="grad">
             <div class="grid">
-                <ul class="nav menuTitle">
-                    <li ><a href="index.html" style="background: none;"><img class="logo" src="images/CPSlogo.png" /></a></li>
+                <ul id="nav" class="nav menuTitle">
+                    <li ><a href="index.html" class="logoMenu"><span class="logoAll"><img class="logo" src="images/CPSlogo.png" /></span><span class="logoIe"><img class="logo" src="images/CPSlogo.gif" /></span></a></li>
                     <li class="menu "><a href="aboutCPS.html">about</a></li>
                     <li  class="menu"><a href="upgrades.html">upgrades</a></li>
                     <li  class="menu menuHighlight"><a href="parts.html">parts</a></li>
@@ -57,7 +74,7 @@ All Rights Reserved.
                 </ul>
 
                 <div class="rows">
-                    <div class= "square">
+                    <div >
                         <div class="slideshow">
                             <ul class="bxslider">
                                 <li><img src="images/slideshow1.jpg" class="slide"/></li>
