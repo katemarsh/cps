@@ -27,7 +27,23 @@ All Rights Reserved.
                 });
             });
 
-        </script>
+
+    function toggleVisibility(selectedTab) {
+        
+         var content = document.getElementsByClassName('content');
+         
+         for(var i=0; i<content.length; i++) {
+              if(content[i].id == selectedTab) {
+                    content[i].style.display = 'block';
+              } else {
+                    content[i].style.display = 'none';
+              }
+         }
+    
+    }
+</script>
+
+          
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200' rel='stylesheet' type='text/css'>
         <link href="lib/normalize.css" rel="stylesheet" />
         <link href="lib/styles.css" rel="stylesheet" />
@@ -52,15 +68,15 @@ All Rights Reserved.
     <body>
         <div id="grad">
             <div class="slideshow">
-                            <ul class="bxslider">
-                                <li><img src="images/slideshow1.jpg" class="slide"/></li>
-                                <li><img src="images/slideshow2.jpg" class="slide"/></li>
-                                <li><img src="images/slideshow5.jpg" class="slide"/></li>
-                                <li><img src="images/slideshow4.jpg" class="slide"/></li>
-                                <li><img src="images/slideshow6.jpg" class="slide"/></li>
-                                <li><img src="images/slideshow7.jpg" class="slide"/></li>
-                            </ul>
-                        </div>
+                <ul class="bxslider">
+                    <li><img src="images/slideshow1.jpg" class="slide"/></li>
+                    <li><img src="images/slideshow2.jpg" class="slide"/></li>
+                    <li><img src="images/slideshow5.jpg" class="slide"/></li>
+                    <li><img src="images/slideshow4.jpg" class="slide"/></li>
+                    <li><img src="images/slideshow6.jpg" class="slide"/></li>
+                    <li><img src="images/slideshow7.jpg" class="slide"/></li>
+                </ul>
+            </div>
             <div class="grid">
                 <ul id="nav" class="nav menuTitle">
                     <li ><a href="index.html" class="logoMenu"><span class="logoAll"><img class="logo" src="images/CPSlogo.png" /></span><span class="logoIe"><img class="logo" src="images/CPSlogo.gif" /></span></a></li>
@@ -85,7 +101,7 @@ All Rights Reserved.
 
                 <div class="rows">
                     <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png">
-                        
+
                     </div>
                     <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
                     <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
@@ -120,117 +136,76 @@ All Rights Reserved.
             </div>
             <div class="text">
                 <div class="leftcol3lg">
+                    <p class="pullQuote">
+                        CPS performs various upgrades on products in order to meet specific manufacturing requirements.
+                    </p>
+                    <br/>
+
                     <p class="subTitle">
-                        C1 UPGRADES
+                        UPGRADES
                     </p>
 
-                    <ul class="bodyText list">
+
+                    <ul class="bodyText list" style="text-decoration: underline">
                         <li>
-                            FerroFluidic Spindle
+                            <a href="#" onclick="toggleVisibility('computerMonitor');">Computer Monitor</a>
                         </li>
                         <li>
-                            Ceramic Bottom Plate
+                            <a href="#" onclick="toggleVisibility('ceramicBottom');">Ceramic Bottom Plate</a>
                         </li>
                         <li>
-                            RF Strap Upgrade
+                            <a href="#" onclick="toggleVisibility('rf');">RF Strap Upgrade</a>
                         </li>
                         <li>
-                            Megapak Power Supply
+                            <a href="#" onclick="toggleVisibility('megapak');">Megapak Power Supply</a>
                         </li>
                         <li>
-                            Sapphire Window
+                            <a href="#" onclick="toggleVisibility('sapphire');">Sapphire Window</a>
                         </li>
                         <li>
-                            One Piece Loadlock Door Shaft
-                        </li>
-                        <li>
-                            SECS II communications interface
-                        </li>
-                        <li>
-                            New Generation Terminal Panel
-                        </li>
-                        <li>
-                            Micro-Contamination Package
-                        </li>
-                        <li>
-                            New Generation Gas Box, with Aera FCPA digital, programmable MFC’S with LOTO's
-                        </li>
-                        <li>
-                            External Heated Pendulum Valve
-                        </li>
-                        <li>
-                            586 Computer with Flash Drive
-                        </li>
-                        <li>
-                            Digital Pressure/Temperature Control Unit
-                        </li>
-                        <li>
-                            Robot with 70V Motors and OEM 750 Driver Kit
-                        </li>
-                        <li>
-                            Front Flat Panel Touchscreen
-                        </li>
-                        <li>
-                            Side Flat Panel Monitor
-                        </li>
-                        <li>
-                            AC and RF Ceramic Feedthru's
-                        </li>
-                        <li>
-                            AE Matching Network
-                        </li>
-                        <li>
-                            AE Generator
-                        </li>
-                        <li>
-                            RF Detector Endpoint System
-                        </li>
-                        <li>
-                            Redesigned RF Enclosure with removable panels
-                        </li>
-                        <li>
-                            Extended Platform
+                            <a href="#" onclick="toggleVisibility('onePiece');">One Piece Loadlock Door Shaft</a>
                         </li>
                     </ul>
-                    <p class="subTitle">
-                        C2 Upgrades
+                    <br/>
+                    <p class="bodyText blue" style="font-style: oblique;">
+                        Click on an upgrade for additional details
                     </p>
-                    <ul class="bodyText list">
-                        <li>
-                            RPC – Remote Plasma Clean
-                        </li>
-                        <li>
-                            MAG 7 Robot
-                        </li>
-                        <li>
-                            QNX4/MC3 Software
-                        </li>
-                        <li>
-                            RF Detector Endpoint System
-                        </li>
-                        <li>
-                            Ceramic Bottom Plate
-                        </li>
-                        <li>
-                            FerroFludic Spindle
-                        </li>
-                        <li>
-                            External Heated Pendulum Valve
-                        </li>
-                    </ul>
                 </div>
                 <div class="column">
-                    <div class="rightcol3sm">
-                        <p class="pullQuote">
-                            CPS performs various upgrades on products in order to meet specific manufacturing requirements.
-                        </p>
+                    <div class="rightcol3sm" id="details">
+                        <div id="computerMonitor" class="content" >
+                            <p class="subTitle">Computer Monitor Upgrade</p>
+                            <p class="bodyText">Mauris quis ipsum ultrices, sollicitudin est in, elementum arcu.</p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
+                        <div  id="ceramicBottom" class="content">
+                            <p class="subTitle">Ceramic Bottom Upgrade</p>
+                            <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
+                        <div id="rf" class="content" >
+                            <p class="subTitle">RF Strap Upgrade</p>
+                            <p class="bodyText"> Cras mollis felis sapien, ac tincidunt urna scelerisque ut.</p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
+                        <div  id="megapak" class="content">
+                            <p class="subTitle">Megapak Power Supply Upgrade</p>
+                            <p class="bodyText">Pellentesque iaculis elit ac nulla varius viverra. Cras mollis felis sapien, ac tincidunt urna scelerisque ut.</p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
+                        <div id="sapphire" class="content" >
+                            <p class="subTitle">Sapphire Window Upgrade</p>
+                            <p class="bodyText">Mauris quis ipsum ultrices, sollicitudin est in, elementum arcu. Pellentesque posuere efficitur ex, sit amet imperdiet nulla ultricies eget. </p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
+                        <div  id="onePiece" class="content">
+                            <p class="subTitle">One Piece Loadlock Door Shaft Upgrade</p>
+                            <p class="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <p class="bodyText"><a href="#" class="blue">Download a PDF here</a></p>
+                        </div>
                     </div>
 
-                    <div class="rightcol3sm">
-                        <p class="pullQuote">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat ipsum leo, ut scelerisque elit ultricies at. Morbi nibh urna, vestibulum lacinia finibus at, blandit vitae sem. Etiam ultricies vestibulum vulputate. Nulla mauris lacus, interdum et condimentum eu, elementum sit amet turpis.
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </div>
