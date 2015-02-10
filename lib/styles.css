@@ -64,6 +64,23 @@ body {
     height: 100%
 }
 
+::-webkit-scrollbar {
+    width: 1vh;
+    height: 1vh;
+}
+ 
+::-webkit-scrollbar-track-piece {
+   
+    border-radius: 10px;
+    width: 1vh;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #01143D;
+    width: 1vh;
+}
+
 .logo {
     width: 100%;
     position: relative;

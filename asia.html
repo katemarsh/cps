@@ -26,13 +26,21 @@ All Rights Reserved.
                     speed: 7000
                 });
             });
+
         </script>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200' rel='stylesheet' type='text/css'>
         <link href="lib/normalize.css" rel="stylesheet" />
-        <link href="lib/styles.css" rel="stylesheet" >
+        <link href="lib/styles.css" rel="stylesheet" />
         <!--[if IE 6]>
         <link rel="stylesheet" type="text/css" href="lib/ie6.css" />
-
+        <style>
+            .rows{
+                visibility: hidden;
+            }
+            .grid{
+                height:700px;
+                }
+        </style>
         <![endif]-->
         <!--[if lt IE 10]>
         <link rel="stylesheet" type="text/css" href="lib/all-ie.css" />
@@ -43,19 +51,18 @@ All Rights Reserved.
     </head>
     <body>
         <div id="grad">
-             <div class="slideshow">
+            <div class="slideshow">
                             <ul class="bxslider">
-                                <li><img src="images/slideshow1.jpg" class="slide" /></li>
-                                <li><img src="images/slideshow2.jpg" class="slide" /></li>
-                                <li><img src="images/slideshow5.jpg" class="slide" /></li>
-                                <li><img src="images/slideshow4.jpg" class="slide" /></li>
-                                <li><img src="images/slideshow6.jpg" class="slide" /></li>
-                                <li><img src="images/slideshow7.jpg" class="slide" /></li>
+                                <li><img src="images/slideshow1.jpg" class="slide"/></li>
+                                <li><img src="images/slideshow2.jpg" class="slide"/></li>
+                                <li><img src="images/slideshow5.jpg" class="slide"/></li>
+                                <li><img src="images/slideshow4.jpg" class="slide"/></li>
+                                <li><img src="images/slideshow6.jpg" class="slide"/></li>
+                                <li><img src="images/slideshow7.jpg" class="slide"/></li>
                             </ul>
-                        </div>
+            </div>
             <div class="grid">
-                
-                    <ul id="nav" class="nav menuTitle">
+                <ul id="nav" class="nav menuTitle">
                     <li ><a href="index.html" class="logoMenu"><span class="logoAll"><img class="logo" src="images/CPSlogo.png" /></span><span class="logoIe"><img class="logo" src="images/CPSlogo.gif" /></span></a></li>
                     <li class="menu "><a href="aboutCPS.html">about</a></li>
                     <li  class="menu"><a href="upgrades.html">upgrades</a></li>
@@ -67,7 +74,7 @@ All Rights Reserved.
                             <li><a href="training.html">training</a></li>
                         </ul>
                     </li>
-                    <li  class="menu"><a href="#">contact</a>
+                    <li  class="menu menuHighlight"><a href="#">contact</a>
                         <ul style="height:24vh;">
                             <li><a href="california.html">california</a></li>
                             <li><a href="arizona.html">arizona</a></li>
@@ -76,14 +83,16 @@ All Rights Reserved.
                         </ul>
                     </li>
                 </ul>
-                
+
                 <div class="rows">
-                    <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png"></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png">
+                       
+                    </div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
                     <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(255,255,255,.25);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.1);"><img src="images/square.png" /></div>
+                    <div class= "square" style="background: rgba(255,255,255,.05);"><img src="images/square.png" /></div>
                     <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(255,255,255,.15);"><img src="images/square.png" /></div>
-                    <div class= "square" style="background: rgba(255,255,255,0);"><img src="images/square.png" /></div>
                 </div>
                 <div class="rows">
                     <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div> 
@@ -110,7 +119,46 @@ All Rights Reserved.
                     <div class= "square" style="background: rgba(255,255,255,.2);"><img src="images/square.png" /></div>  
                 </div>
             </div>
-           
+            <div class="text">
+                <div class="leftcol3lg">
+                    <div class="column">
+                    <img src="images/cpsAsia.jpg" class="locationPhoto" />
+                    <p class="bodyText" style="text-align: center; padding-top:4vh;">
+                        <span class="subTitle">CPS Asia</span>
+                        <br> Affiliate Office
+                        <br>Address
+                    </p>
+                    <p class="bodyText" style="text-align: center; padding-top:2vh;">
+                        <a href="https://goo.gl/maps/3pBYO" class="link" target="_blank">Get Directions</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="rightcol3sm">
+                        <p class="subTitle">
+                        Contact    
+                        </p>
+                        <p class="bodyText" style="padding-top:2vh;">
+                            <a href="mailto:info@conceptpartsolutions.com"><span class="blue">info@conceptpartsolutions.com</span></a><br>
+                            P: 000.000.000<br>
+                            
+                        </p>
+                        <p class="bodyText" style="padding-top:2vh;">
+                            Jane Smith, Head of Engineering<br>
+                            <a href="mailto:info@conceptpartsolutions.com"><span class="blue">jane@conceptpartsolutions.com</span></a><br>
+                            P: 000.000.000
+                        </p>
+                        <p class="bodyText" style="padding-top:2vh;">
+                            John Smith, Research & Development<br>
+                            <a href="mailto:info@conceptpartsolutions.com"><span class="blue">john@conceptpartsolutions.com</span></a><br>
+                            P: 000.000.000
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </body>
 </html>
+
