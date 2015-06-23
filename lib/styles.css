@@ -230,16 +230,11 @@ body {
     display: none;
     list-style: none;
     width: 100%;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 18vh;
-    -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch
 }
 
 .nav > li:hover > ul {
@@ -260,6 +255,7 @@ body {
             flex-basis: auto;
     background: linear-gradient(rgba(1,28,87,.75),rgba(1,28,87,1)); 
     /*    behavior: url(../pie/PIE.htc);*/
+    height: 6vh;
 }
 
 .nav > li > ul > li > a:hover {
